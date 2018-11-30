@@ -41,6 +41,7 @@ body {
   top: -1.1em;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 
 .robot-head-right,
@@ -49,4 +50,28 @@ body {
   position: absolute;
   z-index: 3;
   top: -3em;
+}
+
+.robot-head-left {
+  left: 11%;
+  transform: translateY(10%);
+}
+
+.robot-head-right {
+  left: 50%;
+  transform: translateY(10%);
+}
+
+.robot:hover > .robot-head-left {
+  left: 0%;
+  transform: translateY(0%);
+}
+
+.robot:hover > .robot-head-right {
+  left: 61%;
+  transform: translateY(0%);
+}
+
+.robot:hover > .robot-brain {
+  display: block;
 }
